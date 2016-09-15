@@ -3,4 +3,6 @@ var ReactDOM = require('react-dom');
 
 var $ = document.querySelector.bind(document);
 
-ReactDOM.render( < h1 > teste React < /h1>, $('#app'));
+var GitHub = require('./components/GitHub.js');
+
+ReactDOM.render( < GitHub / > , $('#app'));
