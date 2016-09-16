@@ -1,5 +1,7 @@
 var React = require('react');
 
+var UserRepos = require('./UserRepos.js');
+
 function UserInfo(props) {
     var info = props && props.user
         ? (
@@ -16,6 +18,9 @@ function UserInfo(props) {
                         <a className="btn btn-default" href={props.user.html_url} role="button">
                             View details</a>
                     </p>
+                </div>
+                <div className="col-lg-8">
+                    <UserRepos repos={props.repos} />
                 </div>
             </div>
         )
