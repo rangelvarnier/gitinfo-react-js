@@ -1,8 +1,7 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import GitHub from './components/GitHub.js';
 
-var $ = document.querySelector.bind(document);
-
-var GitHub = require('./components/GitHub.js');
+let $ = document.querySelector.bind(document);
 
 ReactDOM.render( < GitHub / > , $('#app'));
