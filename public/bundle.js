@@ -21575,7 +21575,11 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'GitHub Info'
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/rangelvarnier/primeiros-passos-com-react-js' },
+	                        'GitHub Info'
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',

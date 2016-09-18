@@ -22,7 +22,10 @@ class SearchUser extends Component {
     render() {
         return (
             <div className="jumbotron">
-                <h1>GitHub Info</h1>
+                <h1>
+                    <a href="https://github.com/rangelvarnier/primeiros-passos-com-react-js">
+                        GitHub Info</a>
+                </h1>
                 <div className="row">
                     <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
