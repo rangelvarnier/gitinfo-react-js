@@ -23032,7 +23032,6 @@
 	            _react2.default.createElement(_UserRepos2.default, { repos: repos })
 	        )
 	    ) : null;
-
 	    return info;
 	};
 
@@ -23047,7 +23046,7 @@
 /* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -23082,50 +23081,53 @@
 	    }
 
 	    _createClass(UserRepos, [{
-	        key: "componentWillReceiveProps",
+	        key: 'componentWillReceiveProps',
 	        value: function componentWillReceiveProps(props) {
 	            this.setState({ reposCount: props.repos.length });
 	        }
 	    }, {
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            var repos = this.props.repos;
 
+	            var repositoryStyle = { 'margin-right': '5px' };
 	            var reposList = repos.map(function (repo, key) {
 	                return _react2.default.createElement(
-	                    "div",
-	                    { key: key, className: "thumbnail" },
+	                    'div',
+	                    { key: key, className: 'thumbnail' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "caption" },
+	                        'div',
+	                        { className: 'caption' },
 	                        _react2.default.createElement(
-	                            "h3",
+	                            'h3',
 	                            null,
 	                            repo.name,
+	                            ' ',
 	                            _react2.default.createElement(
-	                                "span",
-	                                { className: "badge" },
+	                                'span',
+	                                { className: 'badge' },
 	                                repo.stargazers_count,
-	                                " STARS"
+	                                ' Stars'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "p",
+	                            'p',
 	                            null,
 	                            repo.description
 	                        ),
 	                        _react2.default.createElement(
-	                            "p",
+	                            'p',
 	                            null,
 	                            _react2.default.createElement(
-	                                "a",
-	                                { href: repo.html_url, className: "btn btn-primary", role: "button" },
-	                                "Repository"
+	                                'a',
+	                                { href: repo.html_url, className: 'btn btn-primary', style: repositoryStyle,
+	                                    role: 'button' },
+	                                'Repository'
 	                            ),
 	                            _react2.default.createElement(
-	                                "a",
-	                                { href: repo.html_url + '/issues', className: "btn btn-default", role: "button" },
-	                                "Issues"
+	                                'a',
+	                                { href: repo.html_url + '/issues', className: 'btn btn-default', role: 'button' },
+	                                'Issues'
 	                            )
 	                        )
 	                    )
@@ -23133,13 +23135,13 @@
 	            });
 
 	            return _react2.default.createElement(
-	                "div",
+	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    "h2",
+	                    'h2',
 	                    null,
 	                    this.state.reposCount,
-	                    " repositories"
+	                    ' repositories'
 	                ),
 	                reposList
 	            );
@@ -23192,7 +23194,7 @@
 	            return _react2.default.createElement(
 	                "div",
 	                { className: "userData" },
-	                _react2.default.createElement("img", { className: "img-circle", src: user.avatar_url, alt: "avatar", width: "140", height: "140" }),
+	                _react2.default.createElement("img", { className: "img-rounded ", src: user.avatar_url, alt: "avatar", width: "150", height: "150" }),
 	                _react2.default.createElement(
 	                    "h2",
 	                    null,

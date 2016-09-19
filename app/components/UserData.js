@@ -9,7 +9,7 @@ class UserData extends Component{
         const {user} = this.props;
         return (
             <div className="userData">
-                <img className="img-circle" src={user.avatar_url} alt="avatar" width="140" height="140"/>
+                <img className="img-rounded " src={user.avatar_url} alt="avatar" width="150" height="150"/>
                 <h2>{user.login}</h2>
                 <h2>{user.name}</h2>
                 <p>
